@@ -2,6 +2,7 @@ package Main;
 
 public class Point {
     private int x, y, z;
+    // Constructor
     public Point(int x,int y) {
         this.x = x;
         this.y = y;
