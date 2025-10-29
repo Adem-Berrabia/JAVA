@@ -48,7 +48,7 @@ class Livre {
 
     // afficheToi()
     public void afficheToi() {
-        System.out.println(this.toString());
+        System.out.println(toString());
     }
 }
 
