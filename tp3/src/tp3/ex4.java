@@ -1,7 +1,4 @@
 package tp3;
-
-
-
 public class ex4 {
     // Variables d’instance
     private String titre;
