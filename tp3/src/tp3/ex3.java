@@ -65,9 +65,13 @@ public class ex3 {
         livre2.setNbPages(300);
 
         // Affichage
-        livre1.afficheToi();
-        livre2.afficheToi();
-        livre3.afficheToi();
+        // livre1.afficheToi();
+        // livre2.afficheToi();
+        // livre3.afficheToi();
+
+        Livre l1=new Livre("","",300);
+        Livre l2=new Livre("","",300);
+        Livre l3=new Livre("","",300);
 
         // Total des pages
         int totalPages = livre1.getNbPages() + livre2.getNbPages() + livre3.getNbPages();
