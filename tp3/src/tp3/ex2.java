@@ -45,11 +45,11 @@ public class ex2 {
     	ex2 livre1 = new ex2("Victor Hugo", "Les Misérables");
         ex2 livre2 = new ex2("Albert Camus", "L'Étranger");
 
-        livre1.setNbPages(500);
-        livre2.setNbPages(150);
-
         System.out.println("Livre 1 : " + livre1.getTitre() + " → " + livre1.getNbPages() + " pages");
         System.out.println("Livre 2 : " + livre2.getTitre() + " → " + livre2.getNbPages() + " pages");
+
+        livre1.setNbPages(500);
+        livre2.setNbPages(150);
 
         int totalPages = livre1.getNbPages() + livre2.getNbPages();
         System.out.println("Nombre total de pages : " + totalPages);
