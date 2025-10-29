@@ -8,7 +8,7 @@ public class ex4 {
     private String auteur;
     private int nbPages;
     private double prix;
-    private boolean prixFixe; // indique si le prix a déjà été fixé
+    private boolean prixFixe;
 
     // Constructeur 1 : sans prix
     public ex4(String unAuteur, String unTitre) {
@@ -88,24 +88,19 @@ public class ex4 {
 
     // Méthode main pour les tests
     public static void main(String[] args) {
-        // Cas 1 : livre sans prix fixé
         ex4 livre1 = new ex4("Victor Hugo", "Les Misérables");
         livre1.setNbPages(500);
         System.out.println(livre1); 
 
-        // Cas 2 : livre avec prix fixé dès le départ
         ex4 livre2 = new ex4("Albert Camus", "L'Étranger", 19.99);
         livre2.setNbPages(150);
         System.out.println(livre2);
 
-        // Cas 3 : tentative de modifier le prix plusieurs fois
         livre2.setPrix(25.0); 
 
-        // Cas 4 : fixer le prix plus tard pour un livre sans prix initial
         livre1.setPrix(29.5);
         System.out.println(livre1);
 
-        // Tentative de le modifier à nouveau
         livre1.setPrix(31.0); 
     }
 }
