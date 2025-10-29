@@ -3,11 +3,11 @@ public class TestDictionnaire {
 
     public static void main(String[] args) {
 
-        MotDictionnaire dico = new Dictionnaire();
+        MotDictionnaire dico = new MotDictionnaire();
 
-        dico.Ajouter("Fait", "Nom", 'M', "événement chose");
-        dico.Ajouter("Vague", "Nom", 'F', "ondulation à la surface de l'eau");
-        dico.Ajouter("Réussir", "V", '-', "avoir un bon résultat");
+        dico.Ajouter("Fait, Nom, M, événement chose");
+        dico.Ajouter("Vague, Nom, F, ondulation à la surface de l'eau");
+        dico.Ajouter("Réussir, V, -, avoir un bon résultat");
 
         System.out.println("\nRecherche du mot 'Fait' :");
         dico.Rechercher("Fait");
